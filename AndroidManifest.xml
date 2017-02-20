@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android_wifitest_v0_1"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="16" />
+       <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+       <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+       <uses-permission android:name="android.permission.WAKE_LOCK" />
+       <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+       <uses-permission android:name="android.permission.SHOW_WHEN_LOCK" />
+       <uses-permission android:name="android.permission.DEVICE_ADMIN" />
+       <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+       <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	   <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+	   <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+	   <uses-permission android:name="android.permission.INTERNET"/>
+	   <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	   <uses-permission android:name="android.permission.RESTART_PACKAGES"/>	   
+	   <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+	   <uses-permission android:name="android.perission.READ_EXTERNAL_STORAGE"/>
+	   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	   <uses-permission android:name="android.permission.HARDWARE_TEST"/>
+	   <uses-permission android:name="android.permission.REBOOT"/>
+	   <uses-permission android:name="android.permission.DEVICE_POWER"/>
+	   
+    
+       
+    
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <uses-library android:name="com.lge.systemservice.core"/>
+        
+        <activity
+            android:name="com.example.android_wifitest_v0_1.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+				
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+        </activity>
+        
+        <activity android:name=".AgingTest"
+                  android:label="AGING TEST">
+        </activity>
+        <activity android:name=".AgingTest2"
+                  android:label="AGING TEST">            
+        </activity>
+        <activity android:name=".StationActivity"
+                  android:label="StationActivity">
+        </activity>
+        <activity android:name=".allActivity"
+                  android:label="SANITY CHECK">
+        </activity>
+        <activity android:name=".HotspotActivity"
+                  android:label="HotspotActivity">
+        </activity>
+        <activity android:name=".DirectActivity"
+                  android:label="DirectActivity">
+        </activity>
+        <activity android:name=".DisplayActivity"
+                  android:label="DisplayActivity">
+        </activity>
+        <activity android:name=".AdditionalActivity"
+                  android:label="ADDITIONAL TEST">
+        </activity>
+        <activity android:name=".WifiListActivity"
+                  android:label="WifiListActivity">
+        </activity>
+        <activity android:name="com.example.android_wifitest_v0_1.testconfig.TestConfiguration"
+                  android:label="Test Configuration">
+        </activity>
+        <activity android:name="com.example.android_wifitest_v0_1.substation.AgingTestActivity"
+                  android:label="BrowserAgingTest">
+        </activity>
+        <activity android:name="com.example.android_wifitest_v0_1.substation.OnOffActivity"
+                  android:label="OnOffActivity">
+        </activity>
+        <activity android:name="com.example.android_wifitest_v0_1.substation.ApAutoConnectActivity"
+                  android:label="ApAutoConnectActivity">
+        </activity>
+        <activity android:name="com.example.android_wifitest_v0_1.substation.ConnectActivity"
+                  android:label="ConnectActivity">
+        </activity>
+        <activity android:name="com.example.android_wifitest_v0_1.substation.HiddenApConnectActivity"
+                  android:label="HiddenApConnectActivity">
+        </activity>
+        <activity android:name="com.example.android_wifitest_v0_1.substation.StaticIpActivity"
+                  android:label="StaticIpActivity">
+        </activity>
+        <activity android:name="com.example.android_wifitest_v0_1.substation.SuspendResumeActivity"
+                  android:label="SuspendResumeActivity">
+        </activity>
+        <activity android:name="com.example.android_wifitest_v0_1.subhotspot.hOnOffActivity"
+                  android:label="hOnOffActivity">
+        </activity>
+        <activity android:name="com.example.android_wifitest_v0_1.subhotspot.hConnectionActivity"
+                  android:label="hConnectionActivity">
+        </activity>
+        <activity android:name="com.example.android_wifitest_v0_1.subdisplay.mConnectActivity"
+                  android:label="mConnectActivity">
+        </activity>
+        <activity android:name="com.example.android_wifitest_v0_1.subdisplay.mSearchActivity"
+                  android:label="mSearchActivity">
+        </activity>
+        <activity android:name="com.example.android_wifitest_v0_1.subdisplay.mOnOffActivity"
+                  android:label="mOnOffActivity">
+        </activity>
+        <activity android:name="com.example.android_wifitest_v0_1.subdirect.dConnectActivity"
+                  android:label="dConnectActivity">
+        </activity>
+        <activity android:name="com.example.android_wifitest_v0_1.subdirect.dGroupActivity"
+                  android:label="dGroupActivity">
+        </activity>
+        <activity android:name="com.example.android_wifitest_v0_1.subdirect.dOnOffActivity"
+                  android:label="dOnOffActivity">
+        </activity>
+        <activity android:name="com.example.android_wifitest_v0_1.subdirect.dScanActivity"
+                  android:label="dScanActivity">
+        </activity>
+        <activity android:name="com.example.android_wifitest_v0_1.subadditionaltest.aBroadcastActivity"
+            	  android:label="aBroadcastActivity">
+        </activity>
+        <service android:name=".substation.Wifi_OnOff_Service"></service>
+        <service android:name=".substation.Wifi_Connect_Service"></service>
+        <service android:name=".substation.Wifi_HiddenAp_Service"></service>
+        <service android:name=".substation.Wifi_SR_Service"></service>
+        <service android:name=".substation.Wifi_Auto_Service"></service>
+        <service android:name=".substation.Wifi_StaticIp_Service"></service>
+        <service android:name=".subhotspot.WifiAP_OnOff_Service"></service>
+        <service android:name=".subdisplay.WfdOnOffTestService"></service>
+        <service android:name=".subdisplay.WfdScanTestService"></service>
+        <service android:name=".subadditionaltest.aConnectionTime_Service"></service>
+        <service android:name=".subadditionaltest.aBroadcast_Service"></service>
+        <activity android:name="com.example.android_wifitest_v0_1.subadditionaltest.aConnectionTime_Activity"></activity>      
+    </application>
+  
+</manifest>

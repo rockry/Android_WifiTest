@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Android_WifiTest_v0_6</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="WifiTestTitle">&lt;Wi-Fi Test Application&gt;</string>
+    <string name="AllTest">SANITY CHECK</string>
+    <string name="AgingTest">AGING TEST</string>
+    <string name="TestConfig">Test Configuration</string>
+    <string name="AdditionalTest">ADDITIONAL TEST</string>
+    <string name="Aging_Test_Guide">&lt;Please click the list which you want to test.&gt;</string>
+
+</resources>

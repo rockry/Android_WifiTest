@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayoutvertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="right"
+    android:orientation="vertical"
+    android:background="@color/black" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal" >
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Loop"
+         android:textColor="@color/white" />
+
+     <EditText
+         android:id="@+id/sConnectLoop"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="10" />
+
+     <ToggleButton
+         android:id="@+id/sConnectButton"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="ToggleButton" />
+    </LinearLayout>
+    <LinearLayout
+  	    android:layout_width="match_parent"
+  	    android:layout_height="wrap_content"
+  	    android:gravity="left|right"
+  	    android:orientation="horizontal" >
+
+
+		<TextView
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="0.5"
+		    android:text="SSID"
+		    android:textColor="@color/white" />
+
+
+		<TextView
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="0.5"
+		    android:text="PASSWORD"
+		    android:textColor="@color/white" />
+
+    </LinearLayout>
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+		android:orientation="horizontal" >
+
+		<EditText
+		    android:id="@+id/sConnectSSID"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="0.5"
+		    android:hint="Wi-Fi_Sanity_AP" />
+
+		<EditText
+		    android:id="@+id/sConnectPASS"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="0.5"
+		    android:hint="lge12345" />
+
+    </LinearLayout>
+    <LinearLayout
+		android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+		android:orientation="horizontal" >
+		<TextView
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="0.5"
+		    android:text="Result on each test"
+		    android:textColor="@color/white" />
+         
+         
+    </LinearLayout>
+    <LinearLayout
+		android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:gravity="right"
+		android:orientation="horizontal" >
+		
+        <ListView
+            android:id="@+id/timeList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white" >
+
+        </ListView>
+        <ScrollView
+            android:id="@+id/scrView"
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            >
+        	    
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>
